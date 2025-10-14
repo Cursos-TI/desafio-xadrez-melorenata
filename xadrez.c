@@ -30,6 +30,46 @@ int main() {
         printf("Esquerda\n");
         a++;
     }while(a<mov_rainha);
-
+    
+    
+    // CAVALO
+    printf("\n\n");
+    //opções para escolha
+    printf("Digite 1 para movimento para cima e direita \n"); 
+    printf("Digite 2 para movimento para cima e esquerda \n");
+    printf("Digite 3 para movimento para baixo e direita \n");
+    printf("Digite 4 para movimento para baixo e esquerda \n");
+    int valor;
+    scanf("%d", &valor);
+    
+    int mov_cavalo = 1; // controle de movimento
+    //condição para movimentos
+    while(mov_cavalo--){
+        if(valor == 1){
+        for(int i = 0;i<2;i++){
+            printf("Cima\n");
+        }
+        printf("Direita\n");
+        }
+        if(valor == 2){
+        for(int i = 0;i<2;i++){
+            printf("Cima\n");
+        }
+        printf("Esquerda\n");
+        }
+        if(valor == 3){
+        for(int i = 0;i<2;i++){
+            printf("Baixo\n");
+        }
+        printf("Direita\n");
+        if(valor == 4){
+        for(int i = 0;i<2;i++){
+            printf("Baixo\n");
+        }
+        printf("Esquerda\n");
+        }
+        }
+    }
+    
     return 0;
 }
